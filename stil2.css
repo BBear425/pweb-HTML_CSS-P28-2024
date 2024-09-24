@@ -1,0 +1,52 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: gray;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: orange;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+.deret {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.deret2{   
+    display: flex;
+    align-items: center; /* Posisi tengah secara vertikal */
+}
+
+.pos {
+  display: block;
+  position: relative;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.myP:hover + .hide {
+  display: block;
+  color: red;
+}
