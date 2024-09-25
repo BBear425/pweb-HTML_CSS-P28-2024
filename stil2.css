@@ -1,9 +1,12 @@
 ul {
   list-style-type: none;
+  top:0;
   margin: 0;
-  padding: 0;
+  padding: 5px 5px 5px 5px;
   overflow: hidden;
   background-color: gray;
+  position: fixed;
+  width: 100%;
 }
 
 li {
@@ -25,21 +28,36 @@ li a:hover {
 }
 
 .deret {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(3, 1fr);
+  margin: 10px 10px 10px 10px;
+  padding:100px 0 0 0;
 }
 
 .deret2{   
     display: flex;
     align-items: center; /* Posisi tengah secara vertikal */
+    padding: 50px 50px 50px 50px;
 }
 
 .pos {
   display: block;
   position: relative;
-  padding: 10px;
   margin: auto;
   text-align: center;
+  border: 3px solid black;
+  background-color: #f1f500;
+  border-radius: 8px 8px 8px 8px;
+}
+.pos2 {
+  display: block;
+  position: relative;
+  padding: 1px 100px;
+  margin: auto;
+  text-align: center;
+  border: 3px solid black;
+  background-color: #f1f500;
+  border-radius: 8px 8px 8px 8px;
 }
 
 .hide {
@@ -50,3 +68,8 @@ li a:hover {
   display: block;
   color: red;
 }
+
+a{
+  text-decoration: none;
+}
+
