@@ -4,7 +4,7 @@
 2. Tentang Produk blm lengkap
 3. Layanan/ Katalog blm samsek
 4. Foto/ Galeri blm samsek
-5. Testimoni blm samsek
+5. Testimoni blm lengkap
 6. Call to action (diarahkan ke link untuk menghubungi penjual) blm lengkap
 7. Navigation Bar krg "cool"
 8. Footer blm samsek
