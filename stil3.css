@@ -1,9 +1,12 @@
 ul {
   list-style-type: none;
+  top:0;
   margin: 0;
-  padding: 0;
+  padding: 5px 5px 5px 5px;
   overflow: hidden;
   background-color: gray;
+  position: fixed;
+  width: 100%;
 }
 
 li {
@@ -24,3 +27,52 @@ li a:hover {
   background-color: #111;
 }
 
+.deret {
+  display: flex;
+  margin: 10px 10px 10px 10px;
+  padding:100px 0 0 0;
+}
+
+.deret2{   
+    display: flex;
+    align-items: center; /* Posisi tengah secara vertikal */
+    padding: 50px 50px 50px 50px;
+}
+
+.pos {
+  flex: 50%;
+  position: relative;
+  margin: auto;
+  border: 3px solid black;
+  background-color: #f1f500;
+  border-radius: 8px 8px 8px 8px;
+  overflow: scroll;
+  padding:10px 30px 10px 30px;
+}
+.pos2 {
+  display: block;
+  position: relative;
+  padding: 1px 100px;
+  margin: auto;
+  text-align: center;
+  border: 3px solid black;
+  background-color: #f1f500;
+  border-radius: 8px 8px 8px 8px;
+}
+
+.kom{
+  text-align: left;
+}
+
+a{
+  text-decoration: none;
+}
+
+h5{
+  font-size: 30px;
+}
+
+.gamkom{
+  float: right;
+  border-radius: 50%;
+}
