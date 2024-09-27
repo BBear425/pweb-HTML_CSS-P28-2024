@@ -51,7 +51,7 @@ h2 {
 .landpage1 {
   padding: 10%;
   background-color: white;
-  outline: 1px solid;
+
 }
 
 .landpage1 img {
@@ -85,7 +85,6 @@ h2 {
 .landpage2 {
   padding: 2%;
   background-color: #a6a6a6;
-  outline: 1px solid;
   right: 0;
   left: 0;
 }
@@ -132,6 +131,7 @@ h2 {
   display: flex;
   margin-left: 45%;
   cursor: pointer;
+  border: none;
 }
 
 /* Landpage 3 (Testimonies Section) */
@@ -180,7 +180,7 @@ h2 {
   position: absolute;
   top: -70px;
   left: 0px;
-  outline: 1px solid;
+  
 }
 
 .testimonytext p {
