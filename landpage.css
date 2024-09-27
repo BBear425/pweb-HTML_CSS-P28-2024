@@ -78,11 +78,16 @@ h2 {
   width: 140px;
   height: 60px;
   margin-top: 40px;
-  margin-left: 20px;
-  font-size: large;
+  font-size: 20px;
   border: none;
   cursor: pointer;
-  border-radius: 10%;
+  border-radius: 13px;
+  background-color: #d9d9d9;
+  transition: background-color 0.3s ease;
+}
+
+#aboutbutton:hover {
+  background-color: #969696;
 }
 
 /* Landpage 2 (Our Products Section) */
@@ -148,8 +153,9 @@ h2 {
   background-color: black;
   color: white;
   font-size: 16px;
-  border-radius: 5px;
+  border-radius: 13px;
   margin-bottom: 40px;
+  transition: background-color 0.3s ease;
 }
 
 .landpage3 a:hover {
