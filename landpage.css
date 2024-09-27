@@ -1,4 +1,9 @@
 /* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -51,7 +56,6 @@ h2 {
 .landpage1 {
   padding: 10%;
   background-color: white;
-  outline: 1px solid;
 }
 
 .landpage1 img {
@@ -83,25 +87,23 @@ h2 {
 
 /* Landpage 2 (Our Products Section) */
 .landpage2 {
-  padding: 2%;
+  text-align: center;
+  padding: 50px 0;
   background-color: #a6a6a6;
-  outline: 1px solid;
-  right: 0;
-  left: 0;
+  
 }
 
 .landpage2 h2 {
   text-align: center;
-  font-size: 60px;
+  font-size: 30px;
   color: white;
 }
 
 .landpageimg {
   padding: 2%;
   margin: auto;
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  display: flex;
   padding-top: 20px;
 }
 
@@ -120,18 +122,18 @@ h2 {
 }
 
 .landpage2 button {
-  background-color: #d9d9d9;
-  color: black;
-  margin-top: 70px;
-  width: 300px;
-  height: 80px;
-  font-size: 30px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  display: flex;
-  margin-left: 45%;
+  background-color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 60px;
+  border-radius: 13px;
+  font-size: 20px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.landpage2 button:hover {
+  background-color: #ddd;
 }
 
 /* Landpage 3 (Testimonies Section) */
@@ -180,7 +182,6 @@ h2 {
   position: absolute;
   top: -70px;
   left: 0px;
-  outline: 1px solid;
 }
 
 .testimonytext p {
