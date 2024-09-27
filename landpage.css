@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -28,12 +28,21 @@ h2 {
   background-color: #ffffff;
   position: fixed;
   width: 100%;
-  outline: 1px solid;
   top: 0;
   left: 0;
   right: 0;
   overflow: hidden;
   z-index: 1000;
+}
+
+.logo-navbar {
+  width: 150px;
+  height: 30px;
+  float: left;
+  margin-left: 8%;
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: #b0b0b0;
 }
 
 .navtext {
@@ -142,58 +151,88 @@ h2 {
 }
 
 /* Landpage 3 (Testimonies Section) */
-.landpage3 {
-  text-align: center;
-  padding: 20px;
-}
-
-.landpage3 a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: black;
-  color: white;
-  font-size: 16px;
-  border-radius: 13px;
-  margin-bottom: 40px;
-  transition: background-color 0.3s ease;
-}
-
-.landpage3 a:hover {
-  background-color: #333;
-}
-
-.testimony {
+.opinion-section {
   display: flex;
-  justify-content: center;
-  gap: 60px;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 100px 70px 100px 70px;
+  background-color: white;
 }
 
-.testimonytext {
-  background-color: #d6d6d6;
+.opinion-left {
+  width: 30%;
+}
+
+.opinion-left h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.opinion-left a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  display: inline-flex;
+  align-items: center;
+}
+
+.opinion-left a i {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.opinion-right {
+  width: 65%;
+}
+
+.opinion-right h2 {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 30%;
+  background-color: #e0e0e0;
   padding: 20px;
-  width: 250px;
-  text-align: left;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.quote {
   position: relative;
-  margin-top: 80px;
-  margin-left: 80px;
-  margin-right: 80px;
-  margin-bottom: 40px;
+  padding-bottom: 20px;
 }
 
-.testimonytext img {
-  width: 290px;
-  height: 120px;
+.quote i {
+  font-size: 24px;
+  color: black;
   position: absolute;
-  top: -70px;
-  left: 0px;
+  top: 0;
+  left: 0;
 }
 
-.testimonytext p {
-  margin-top: 50px;
-  font-size: 20px;
-  color: #000000;
+.quote p {
+  margin-left: 35px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #333;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #333;
 }
 
 /* Footer */
