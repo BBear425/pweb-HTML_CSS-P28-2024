@@ -345,14 +345,18 @@ footer {
 
   /* Landpage 2 */
   .landpageimg {
+    display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .theimage{
+    width: 80%;
   }
 
   .landpage2 button {
     margin-left: 0;
     margin-right: 0;
     display: block;
-    margin: 30px auto;
   }
 
   /* Testimonies */
@@ -363,6 +367,23 @@ footer {
 
   .testimonytext {
     width: 100%;
+  }
+
+  /*Testimonies*/
+  .opinion-section{
+    display: grid;
+  }
+  .opinion-left{
+    width: 100%;
+  }
+
+  .opinion-right{
+    width:100%;
+  }
+
+  .card{
+    padding: 1%;
+    margin: 0;
   }
 
   /* Footer */
