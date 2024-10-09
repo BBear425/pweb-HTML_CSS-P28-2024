@@ -20,56 +20,33 @@
         <a href="landpage.html">Home</a>
       </div>
     </div>
-
-    <div class="deret">
-      <div class="pos">
-        <img class="myP" src="mesin-kopi-super-otomatis.jpg" width="300" />
-        <h1 class="myP">Coffee maker</h1>
-        <!--(Harga: mulai 30 juta)-->
-        <p class="hide">
-          Belum memiliki barista untuk coffee shop Anda? Tak perlu khawatir,
-          coffee shop Anda tidak akan terlantar jika memiliki mesin espresso
-          bertipe super-automatic. Seperti nama tipenya, mesin super-automatic
-          dapat menggiling, memadatkan, dan memanaskan kopi sekaligus. Cara
-          menggunakannya pun sangat mudah, cukup tekan satu tombol, dan mesin
-          espresso ini akan segera membuat kopi sesuai dengan menu yang Anda
-          pilih. Beberapa contoh merk mesin tipe super-automatic yang dapat Anda
-          pilih adalah delonghi dan jura.
-        </p>
-      </div>
-      <div class="pos">
-        <img class="myP" src="images.jpg" width="350" />
-        <h1 class="myP">Kopi Toraja</h1>
-        <p class="hide">
-          Di daerah paling barat di Indonesia, terdapat dua jenis kopi yang
-          diproduksi, yaitu kopi jenis Arabika dan Robusta. Nah, yang paling
-          terkenal dari Aceh adalah kopi Gayo Arabika-nya yang digadang-gadang
-          sebagai salah satu kopi terbaik di dunia. Karakteristik yang paling
-          kuat milik kopi Aceh Gayo ini adalah aromanya yang sangat tajam.
-          Selain itu, kopi Gayo tidak memberi bekas rasa pahit yang lekat di
-          lidah setelah meminumnya, berbeda dengan kebanyakan jenis kopi lainnya
-          yang meninggalkan aftertaste pahit. Inilah alasan mengapa banyak orang
-          sangat menikmati kopi Aceh Gayo.
-        </p>
-      </div>
-      <div class="pos">
-        <img
-          class="myP"
-          src="500ed4de-3562-4b55-b126-c0052aad63e2_169.jpg"
-          width="480"
-        />
-        <h1 class="myP">Kopi Jawa</h1>
-        <p class="hide">
-          Produksi biji kopi Jawa umumnya dilakukan dengan metode wet processing
-          sehingga cita rasanya mungkin sedikit berbeda dan tidak sekuat biji
-          kopi yang dihasilkan di Sumatera atau Sulawesi. Meskipun begitu, jenis
-          kopi Arabika ini sangat dinikmati karena rasanya yang dinilai
-          ‘seimbang’. Tingkat keasaman yang medium dan kekentalan yang nggak
-          terlalu pekat menjadi serta semilir aroma rempah yang dihasilkan,
-          membuat ciri khas sendiri saat menenggaknya.
-        </p>
-      </div>
+    
+    <!-- Filter tombol -->
+    <div class="menu-btn">
+      <h5 class="filter-btn" onclick="allProducts()">
+        All
+      </h5>
+      <h5 class="filter-btn" onclick="filterProducts('beauty')">
+        Beauty
+      </h5>
+      <h5 class="filter-btn" onclick="filterProducts('furniture')">Furniture</h5>
+      <h5 class="filter-btn" onclick="filterProducts('fragrances')">
+        Fragrances
+      </h5>
+      <h5 class="filter-btn" onclick="filterProducts('groceries')">
+        Groceries
+      </h5>
     </div>
+    <div id="deret" class="deret"></div>
+    <div class="menu-btn">
+      <h5 id="next-button" class="filter-btn">Selanjutnya</h5>
+      <h5 id="prev-button" class="filter-btn">Sebelumnya</h5>
+      <h5 onclick="productperPage(45)" class="filter-btn">45</h5>
+      <h5 onclick="productperPage(15)" class="filter-btn">15</h5>
+      <h5 onclick="productperPage(5)" class="filter-btn">5</h5>
+      </div>
+    
+
     <div class="deret2">
       <div class="pos2">
         <h2>
@@ -84,36 +61,39 @@
       </div>
     </div>
     <!-- Footer Section -->
-        <!-- Footer Section -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-left">
-        <div class="logo-placeholder"></div>
-        <div class="social-media">
-          <p>Follow Us</p>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <div class="logo-placeholder"></div>
+          <div class="social-media">
+            <p>Follow Us</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <div class="footer-links">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Order</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Product</a></li>
+            </ul>
+          </div>
+          <div class="contact-us">
+            <a href="https://wa.me/+6289637418068" target="_blank"
+              >Contact Us</a
+            >
           </div>
         </div>
       </div>
-
-      <div class="footer-right">
-        <div class="footer-links">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Order</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Product</a></li>
-          </ul>
-        </div>
-        <div class="contact-us">
-          <a href="https://wa.me/+6289637418068" target="_blank">Contact Us</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
+    <script src="product.js"></script>
   </body>
 </html>

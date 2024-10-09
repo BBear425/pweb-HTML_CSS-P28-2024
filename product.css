@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -44,7 +44,6 @@ h2 {
   background-color: #b0b0b0;
 }
 
-
 .navtext {
   float: right;
   padding-right: 8%;
@@ -60,17 +59,31 @@ h2 {
   float: right;
   font-weight: bold;
 }
+.menu-btn {
+  display: flex;
+  margin: 100px 0 0 0;
+}
+.filter-btn {
+  display: block;
+  margin: auto;
+  width: 15%;
+  padding: 10px;
+  text-align: center;
+  background-color: #86cf8a;
+  color: #1e3922;
+  border-radius: 10px;
+}
 
 .deret {
   display: flex;
+  flex-wrap: wrap;
   margin: 10px 10px 10px 10px;
-  padding: 100px 0 0 0;
 }
 
 .deret2 {
   display: flex;
   align-items: center; /* Posisi tengah secara vertikal */
-  padding: 100px
+  padding: 100px;
 }
 
 .pos {
@@ -78,8 +91,10 @@ h2 {
   position: relative;
   margin: auto;
   text-align: center;
-  background-color: #e0e0e0;
-  border-radius: 0px 0px 8px 8px;
+  background-color: black;
+  color: aliceblue;
+  border-radius: 5px;
+  border: 3px solid #cf8886;
 }
 .pos2 {
   display: block;
@@ -199,10 +214,22 @@ footer {
     flex-direction: column;
   }
 
-  .pos{
+  .pos {
     border-radius: 0;
   }
 
+  .menu-btn {
+    display: block;
+    padding-top: 0px;
+  }
+
+  .filter-btn {
+    flex-direction: column;
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    margin-top: 5px;
+  }
   .pos2 {
     margin: 5%;
   }
